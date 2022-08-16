@@ -1,0 +1,17 @@
+[package]
+name = "ibanexplode"
+version = "0.0.1"
+authors = ["Bernhard Schuster <bernhard@ahoi.io>"]
+edition = "2021"
+license = "Apache-2.0 AND MIT"
+description = "Show info derived from the IBAN, such as the BIC and bank name"
+repository = "https://github.com/drahnr/ibanexplode"
+homepage = "https://github.com/drahnr/ibanexplode"
+readme = "README.md"
+keywords = ["iban", "miniscule"]
+categories = ["command-line-utilities"]
+
+[dependencies]
+iban_validate = { version = "4", features = ["std", "serde"] }
+eyre = "0.6"
+fints-institute-db = "1.0"
